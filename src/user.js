@@ -60,7 +60,7 @@ function User() {
   return (
     <Container>
       <div>
-        <img src={avatar} alt="avatar" />
+        <img src={avatar} alt="avatar" title="A person"/>
         <Metadata>
           <Name>Michelle Appleton</Name>
           <Date>28 Jun 2020</Date>
