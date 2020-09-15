@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "@emotion/styled"
 import User from "./user"
+import image from "./image.png"
 const Background = styled.div`
   background-color: #ecf2f8;
   height: 100%;
@@ -17,10 +18,8 @@ const Card = styled.div`
   border-radius: 10px;
   display: flex;
 `
-const Image = styled.div`
+const Image = styled.img`
   width: 40%;
-  height: 100%;
-  border-right: 1px solid lightblue;
 `
 const Words = styled.div`
   padding: 32px 40px 32px 40px;
@@ -51,7 +50,7 @@ const App = () => {
   return (
     <Background>
       <Card>
-        <Image />
+        <Image src={image} />
         <Words>
           <Title>
             Shift the overall look and feel by <br />
