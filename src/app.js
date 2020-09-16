@@ -17,9 +17,18 @@ const Card = styled.div`
   box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.503415);
   border-radius: 10px;
   display: flex;
+  @media (max-width: 730px) {
+    width: 312px;
+    flex-direction: column;
+    height: 512px;
+  }
 `
 const Image = styled.img`
   width: 40%;
+  @media (max-width: 730px) {
+    width: 100%;
+    height: 200px;
+  }
 `
 const Words = styled.div`
   padding: 32px 40px 32px 40px;
@@ -35,6 +44,11 @@ const Title = styled.div`
   line-height: 28px;
   letter-spacing: 0.25px;
   color: #48556a;
+  @media (max-width: 730px) {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
 `
 const Description = styled.div`
   font-family: sans-serif;
@@ -53,14 +67,13 @@ const App = () => {
         <Image src={image} />
         <Words>
           <Title>
-            Shift the overall look and feel by <br />
-            adding these wonderful touches to <br />
+            Shift the overall look and feel by adding these wonderful touches to
             furniture in your home
           </Title>
           <Description>
-            Ever been in a room and felt like something was missing? <br />
-            Perhaps it felt slightly bare and uninviting. I've got some <br />
-            simple tips to help you make any room feel complete
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I've got some simple tips to help
+            you make any room feel complete
           </Description>
           <User />
         </Words>
